@@ -44,7 +44,7 @@ Number 10
 
 Object { thisis: 'object' }
 
-multypart 100 World
+multipart 100 World
 
 Any arguments Hello World Friends
 
