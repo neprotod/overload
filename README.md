@@ -18,12 +18,12 @@ overload.foo = function(test = {}){
     console.log('Object',test);
 }
 
-overload.foo = function(test = 11, str = ''){
+overload.foo = function(test = 0, str = ''){
     console.log('multipart',test,str);
 }
 
-overload.foo = function(hello = '', str1, str2){
-    console.log('Any arguments',hello, str1, str2);
+overload.foo = function(test = '', str1, str2){
+    console.log('Any arguments',test, str1, str2);
 }
 ```
 ```
