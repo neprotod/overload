@@ -91,7 +91,7 @@ function Overload(){
          * It's function get type or any
          * 
          * @param  {any} _type data from which we want to get the type
-         * @return {ant} 
+         * @return {any} 
          */
         _typeReturn(_type){
             try{
@@ -117,11 +117,11 @@ overload.foo = function(test = 0){
 overload.foo = function(test = {}){
     console.log('Object',test);
 }
-overload.foo = function(test = 11, str = ''){
-    console.log('multipart',test,str);
+overload.foo = function(test = 0, str = ''){
+    console.log('multipart',test, str);
 }
-overload.foo = function(hello = '', str1, str2){
-    console.log('Any arguments',hello, str1, str2);
+overload.foo = function(test = '', str1, str2){
+    console.log('Any arguments',test, str1, str2);
 }
 
 overload.foo("Hello");
